@@ -18,10 +18,48 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #ececec;
+  color: #171717;
+}
+
+.option {
+  @apply hover:bg-blue-gray-100 cursor-pointer px-2 rounded-lg;
+}
+
+.ql-toolbar {
+  position: sticky;
+  top: 21.5vw;
+  background-color: white;
+  z-index: 1;
+  @apply lg:top-24
+}
+
+.ql-editor {
+  z-index: 0;
+  margin-top: 0vw;
+  background-color: white;
+}
+
+.ql-container {
+  position: relative;
+}
+
+.borderAnimation:before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  z-index: -1;
+  transition: transform 0.3s ease;
+  transform-origin: right;
+}
+
+.borderAnimation:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
 }
