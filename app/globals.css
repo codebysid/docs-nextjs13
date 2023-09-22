@@ -28,7 +28,7 @@ body {
 
 .ql-toolbar {
   position: sticky;
-  top: 21.5vw;
+  top: 15vw;
   background-color: white;
   z-index: 1;
   @apply lg:top-24

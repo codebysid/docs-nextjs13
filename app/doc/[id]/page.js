@@ -29,9 +29,9 @@ const DocPage = ({ params }) => {
 
   return (
     <main>
-      <header className="flex justify-around sticky top-0 p-4 z-10 bg-bgWhiteShade w-full">
-        <nav className="flex flex-row justify-between w-full lg:justify-around">
-          <div className="flex flex-row items-center lg:ml-60">
+      <header className="flex sticky top-0 p-4 z-10 bg-bgWhiteShade w-full">
+        <nav className="flex flex-row items-center gap-44 w-full lg:justify-around lg:ml-60">
+          <div className="flex flex-row items-center">
           <FcDocument
             onClick={() => router.push("/")}
             className="text-5xl  cursor-pointer lg:text-6xl"
