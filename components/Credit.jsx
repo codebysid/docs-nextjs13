@@ -33,8 +33,8 @@ const Credit = () => {
                         return (
                             <li key={social.key} className=' emojiList relative'>
                                 <Link href={social.link} className="flex flex-row items-center gap-1 active:text-green-500 borderAnimation">
-                                    {social.icon}
-                                    {social.title}
+                                    {social?.icon}
+                                    {social?.title}
                                 </Link>
                             </li>
                         )
