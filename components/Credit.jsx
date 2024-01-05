@@ -2,6 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import { GithubIcon, LinkedInIcon, InstagramIcon } from './Icons'
 
+//TODO: add other social handles if needed
 const Social_Links = [
     {
         key: 1,
