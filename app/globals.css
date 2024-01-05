@@ -6,6 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --blue: #3b82f6;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -31,7 +32,7 @@ body {
   top: 15vw;
   background-color: white;
   z-index: 1;
-  @apply lg:top-24
+  @apply lg:top-24;
 }
 
 .ql-editor {
@@ -42,13 +43,14 @@ body {
 
 .ql-container {
   position: relative;
+  height: 85% !important;
 }
 
 .borderAnimation:before {
   content: "";
   position: absolute;
   display: block;
-  background-color: black;
+  background-color: var(--blue);
   top: 0;
   left: 0;
   right: 0;

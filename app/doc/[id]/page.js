@@ -30,17 +30,17 @@ const DocPage = ({ params }) => {
   return (
     <main>
       <header className="flex sticky top-0 p-4 z-10 bg-bgWhiteShade w-full">
-        <nav className="flex flex-row items-center gap-44 w-full lg:justify-around lg:ml-60">
+        <nav className="flex flex-row items-center gap-44 w-full lg:justify-around md:ml-32 md:justify-between lg:ml-60">
           <div className="flex flex-row items-center">
-          <FcDocument
-            onClick={() => router.push("/")}
-            className="text-5xl  cursor-pointer lg:text-6xl"
-          />
+            <FcDocument
+              onClick={() => router.push("/")}
+              className="text-5xl  cursor-pointer lg:text-6xl"
+            />
             <h2 className="font-bold px-2">{docSnapshot?.fileName}</h2>
-            </div>
-        <div className="flex flex-row gap-2 items-center mr-60">
-          <ProfilePicture />
-        </div>
+          </div>
+          <div className="flex flex-row gap-2 items-center mr-60">
+            <ProfilePicture />
+          </div>
         </nav>
       </header>
 

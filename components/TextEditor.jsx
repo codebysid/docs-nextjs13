@@ -45,17 +45,17 @@ const TextEditor = ({ id }) => {
     const updateEditorInDb = async () => {
       if (!editor) return;
       const data = await updateDoc(docRef, { editor });
-      toast("File Saved",{
-        duration:1000,
-        position:"top-right",
-        className:"",
-        icon:"✅"
+      toast("File Saved", {
+        duration: 1000,
+        position: "top-right",
+        className: "",
+        icon: "✅"
       })
     };
     updateEditorInDb();
   }, [editor]);
   return (
-    <div className="h-screen w-full flex items-center justify-center bg-bgWhiteShade editor">
+    <div className="lg:h-[80vh] h-screen w-full flex items-center justify-center bg-bgWhiteShade editor">
       <ReactQuill
         className="h-full"
         theme="snow"

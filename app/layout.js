@@ -1,7 +1,7 @@
 import SessionProviders from "@/Providers/SessionProviders";
 import "./globals.css";
 import { Inter } from "next/font/google";
-import { Toaster } from 'react-hot-toast';
+import { Toaster } from "react-hot-toast";
 import Credit from "@/components/Credit";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -16,10 +16,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${inter.className} h-screen`}>
         <SessionProviders>
-          <Toaster/>
+          <Toaster />
           {children}
-          <Credit/>
-          </SessionProviders>
+          <Credit />
+        </SessionProviders>
       </body>
     </html>
   );
